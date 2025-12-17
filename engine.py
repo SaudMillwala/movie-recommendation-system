@@ -75,3 +75,20 @@ class RecommendationEngine:
             key=lambda m: m.average_rating(),
             reverse=True
         )[:n]
+
+    def recommend_by_genre(self, genre: str, n: int = 5):
+        """
+        this recommends top-N movies for any given genre
+        """
+        genre = genre.lower()
+
+        filtered = [
+            movie for movie in self.movies.values()
+            if genre in (g.lower() for g in movie.genres)
+        ]
+
+        return sorted(
+            filtered,
+            key=lambda m: m.average_rating(),
+            reverse=True
+        )[:n]
