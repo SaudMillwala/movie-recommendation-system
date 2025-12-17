@@ -1,6 +1,6 @@
 class Movie:
     """
-    This section represents a movie with combined rating information.
+   combined rating + movie information
     """
 
     def __init__(self, movie_id: int, title: str, genres: str):
