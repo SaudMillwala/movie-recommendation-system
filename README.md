@@ -18,9 +18,13 @@ The goal of this project is to design and implement a movie recommendation syste
 This project uses the publicly available MovieLens 20M dataset provided by GroupLens.  
 The dataset contains approximately 20 million movie ratings created by over 138,000 users across more than 27,000 movies.
 
+https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset?resource=download 
+
 The following files are used:
 - `movies.csv`: Movie titles and genres
 - `ratings.csv`: User ratings for movies
+
+- Add these csv files to the data folder
 
 To improve recommendation performance, movies with fewer than 50 ratings are filtered out during data loading.
 
